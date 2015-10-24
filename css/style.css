@@ -1,5 +1,5 @@
 body{
-	background-color: #F4F4F4;
+	background-color: #fff;
 }
 .navbar{
 	margin-bottom: 0px;
@@ -42,6 +42,12 @@ a#site-logo:hover{
 	#bs-brand{
 		margin-top: 0px;
 		box-shadow: 0px 2px 2px #999;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background-color: #fff;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	#site-logo{
 		float: left;
@@ -112,6 +118,9 @@ a#site-logo:hover{
 	#bs-navbar{
 		margin-top: 0px;
 		display: none;
+		position: fixed;
+		top: 56px;
+		left: 0px;		
 	}
 	#bs-navbar.collapse.in{
 		display: block;
@@ -140,4 +149,83 @@ a#site-logo:hover{
 }
 #main-content{
 	box-shadow: 0px 0px 1px #666;
+	margin-top: 10px;
+}
+.panel-title{
+	position: relative;
+	padding: 0px 20px;
+}
+.panel-title > h3,.panel-title > h4{
+	margin-bottom: 5px;
+}
+.panel-title > h4:after{
+	content:'xem thêm';
+	color:#D9534F;
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: 500;
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+	cursor: pointer;
+}
+.panel-title > hr{
+	margin-top: 0px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.panel-content{
+	padding: 0px 20px;
+}
+.panel-content > ul{
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.panel-content > ul > li{
+	padding: 5px;
+}
+.panel-content > ul > li > a{
+	font-size: 16px;
+}
+@media screen and (max-width: 767px){
+	.panel-content,.panel-title{
+		padding: 0px;
+	}
+	.panel-title > h4:after{
+		right: 0px;
+	}
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -80px;
+  /* Pad bottom by footer height */
+  padding: 0 0 80px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 80px;
+  background-color: #eee;
+  box-shadow: 0px 0px 4px #999;
+}
+#footer-info,#footer-name{
+	padding:20px;
+}
+#footer-name{
+	color:#999;
+	font-size: 16px;
 }

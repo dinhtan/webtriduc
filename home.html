@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div id="wrap">
 	<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
 	  <div class="container-fluid">
 	  <div class="row">
@@ -59,19 +60,19 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img class="image-responsive" src="assets/event-1.jpg" alt="event 1">
+		      <img class="img-responsive" src="assets/event-1.jpg" alt="event 1">
 		      <div class="carousel-caption">
 		        Event so 1
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img class="image-responsive" src="assets/event-2.jpg" alt="event 2" height="400">
+		      <img class="img-responsive" src="assets/event-2.jpg" alt="event 2" height="400">
 		      <div class="carousel-caption">
 		        Event so 2
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img class="image-responsive" src="assets/event-1.jpg" alt="event 3" height="400">
+		      <img class="img-responsive" src="assets/event-1.jpg" alt="event 3" height="400">
 		      <div class="carousel-caption">
 		        Event so 3
 		      </div>
@@ -94,10 +95,15 @@
 			<div class="col-sm-8">
 				<div class="row">
 					<div class="col-sm-6 col-xs-6">
-						<p class="text-left">
-							<i class="fa fa-tty fa-2x"></i>
-							Dịch vụ chăm sóc khách hàng
-						</p>
+						<div class="row">
+							<div class="col-xs-2">
+								<i class="fa fa-tty fa-3x text-danger"></i>
+							</div>
+							<div class="col-xs-10">
+								<small>Dịch vụ chăm sóc khách hàng</small>
+								<h4 style="margin-top:0px">090</h4>
+							</div>
+						</div>
 					</div>
 					<div class="col-sm-6 col-xs-6">
 						<p class="text-right">
@@ -131,10 +137,59 @@
 	</div>
 	<div id="main-content" class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4"></div>
-			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<div class="panel-title">
+					<h4>Tin mới và khuyến mãi</h4>
+					<hr>
+				</div>
+				<div class="panel-content">
+					<ul>
+						<li><a href="#">Chương trình làm mẹ thật tuyệt</a></li>
+						<li><a href="#">Chương trình 20/10</a></li>
+						<li><a href="#">Chương trình tư vấn sức khỏe</a></li>
+					</ul>
+				</div>			
+			</div>
+			<div class="col-sm-4">
+				<div class="panel-title">
+					<h4>Dịch vụ làm đẹp</h4>
+					<hr>
+				</div>	
+				<div class="panel-content">
+					<img src="assets/meeting.jpg" class="img-responsive" alt="Meeting">
+					<p>Chương trình làm mẹ thật tuyệt</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel-title">
+					<h4>Hotline</h4>
+					<hr>
+				</div>	
+				<div class="panel-content">
+					<img src="assets/outdoor.jpg" class="img-responsive" alt="Meeting">
+					<p>Chương trình tư vấn sức khỏe</p>
+				</div>
+			</div>
 		</div>
+	</div>
+	</div>
+	<div id="footer">
+	  <div class="container-fluid">
+	  	<div class="row">
+	  		<div class="col-xs-12 col-sm-10">
+	  			<div id="footer-info">
+	  				<small>Địa chỉ: 219 Lê Duẩn - Hai Bà Trưng - Hà Nội</small>  	
+	  				<br>
+					<small>Tel: (84-4) 39429999 - Fax: (84-4) 39439486 - Email: admin@triduc.com</small>
+	  			</div>	  			
+	  		</div>
+	  		<div class="col-xs-12 col-sm-2 hidden-xs">
+	  			<div id="footer-name" class="pull-right">
+	  				Family Site
+	  			</div>
+	  		</div>
+	  	</div>		
+	  </div>
 	</div>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
