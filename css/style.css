@@ -1,8 +1,8 @@
 body{
 	background-color: #F4F4F4;
 }
-header > .container-fluid{
-	padding: 0px;
+.navbar{
+	margin-bottom: 0px;
 }
 #bs-brand{
 	margin-top: 10px;
@@ -38,9 +38,10 @@ a#site-logo:hover{
 .mobile-header{
 	display: none;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	#bs-brand{
 		margin-top: 0px;
+		box-shadow: 0px 2px 2px #999;
 	}
 	#site-logo{
 		float: left;
@@ -58,7 +59,7 @@ a#site-logo:hover{
 		margin-bottom: 0px;
 		padding:15px;
 		line-height: 25px;
-		font-size: 20px;
+		font-size: 16px;
 		color:rgba(8,6,53,1);
 		text-transform: uppercase;
 		text-align: center;
@@ -66,6 +67,8 @@ a#site-logo:hover{
 }
 #bs-navbar{
 	margin-top: 30px;
+	display: block;
+	padding: 0px;
 }
 #bs-navbar > .top-menu{
 	background: rgba(43,57,145,1);
@@ -80,6 +83,8 @@ a#site-logo:hover{
 	list-style: none;
 	display: block;
 	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 #bs-navbar > .top-menu > li{
 	float: left;
@@ -87,6 +92,7 @@ a#site-logo:hover{
 }
 #bs-navbar > .top-menu > li:hover{
 	background-color: #f4f4f4;
+	box-shadow: 0px 0px 2px #666;
 }
 #bs-navbar a{
 	color: white;
@@ -102,9 +108,13 @@ a#site-logo:hover{
 	line-height: 20px;
 	padding-top: 10px 15px;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	#bs-navbar{
 		margin-top: 0px;
+		display: none;
+	}
+	#bs-navbar.collapse.in{
+		display: block;
 	}
 	#bs-navbar > ul{
 		padding:0px;
@@ -123,4 +133,11 @@ a#site-logo:hover{
 	#bs-navbar > .top-menu > li > a > br{
 		display: none;
 	}
+}
+#top-slide{
+	padding: 0px;
+	margin-bottom: 20px;
+}
+#main-content{
+	box-shadow: 0px 0px 1px #666;
 }
